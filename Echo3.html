@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOTrack - Transform Waste into Worth</title>
+    <meta name="description" content="Join the green revolution with our comprehensive waste management platform. Track, reduce, and recycle your way to a sustainable future.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text" data-testid="app-title">ECOTrack</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" data-section="home" data-testid="nav-home">🏠<span class="nav-text">Home</span></a></li>
+                <li><a href="#" data-section="info" data-testid="nav-info">📊<span class="nav-text">Info</span></a></li>
+                <li><a href="#" data-section="games" data-testid="nav-games">🎮<span class="nav-text">Games</span></a></li>
+                <li><a href="#" data-section="tracker" data-testid="nav-tracker">📈<span class="nav-text">Tracker</span></a></li>
+                <li><a href="#" data-section="about" data-testid="nav-about">ℹ️<span class="nav-text">About</span></a></li>
+                <li><a href="#" data-section="settings" data-testid="nav-settings">⚙️<span class="nav-text">Settings</span></a></li>
+            </ul>
+        </div>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        
+        <!-- Home Section -->
+        <section class="section active" id="home-section" data-testid="home-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 data-key="hero.title">Transform Waste into Worth</h1>
+                    <p data-key="hero.description">Join the green revolution with our comprehensive waste management platform. Track, reduce, and recycle your way to a sustainable future.</p>
+                    <button class="cta-button" data-section="tracker" data-testid="cta-start-tracking" data-key="hero.cta">Start Tracking</button>
+                </div>
+                <div class="hero-image">
+                    🌍
+                </div>
+            </div>
+
+            <!-- Eco Bot Container -->
+            <div class="eco-bot-container">
+                <div class="eco-bot" id="eco-bot">
+                    <div class="robot-body">
+                        <div class="robot-head">
+                            <div class="robot-eyes">
+                                <div class="eye left-eye"></div>
+                                <div class="eye right-eye"></div>
+                            </div>
+                            <div class="robot-antenna"></div>
+                        </div>
+                        <div class="robot-chest">
+                            <div class="robot-panel"></div>
+                        </div>
+                        <div class="robot-wheels">
+                            <div class="wheel left-wheel"></div>
+                            <div class="wheel right-wheel"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chat Bubble -->
+                <div class="chat-bubble" id="chat-bubble">
+                    <div class="chat-content">
+                        <h4>🤖 Eco Bot</h4>
+                        <p>Hi! I am Eco Bot, your waste disposal guide. Click me to learn about proper waste management!</p>
+                    </div>
+                    <div class="chat-arrow"></div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">♻️</span>
+                    <h3 data-key="features.recycling.title">Smart Recycling</h3>
+                    <p data-key="features.recycling.description">Learn how to properly sort and recycle different materials with our intelligent guidance system.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3 data-key="features.analytics.title">Waste Analytics</h3>
+                    <p data-key="features.analytics.description">Track your waste reduction progress with detailed analytics and environmental impact metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏆</span>
+                    <h3 data-key="features.rewards.title">Eco Rewards</h3>
+                    <p data-key="features.rewards.description">Earn points for sustainable practices and redeem them for eco-friendly merchandise.</p>
+                </div>
+            </div>
+            
+            <!-- Eco Rewards Section -->
+            <div class="eco-rewards-section">
+                <div class="section-header">
+                    <h2>Eco Rewards</h2>
+                    <p>Complete tasks to earn virtual trophies</p>
+                </div>
+                
+                <div class="rewards-grid">
+                    <div class="reward-card" data-reward-id="1">
+                        <div class="reward-icon">🏆</div>
+                        <h3>First Steps</h3>
+                        <p>Earn 50 points in any game</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                    <div class="reward-card" data-reward-id="2">
+                        <div class="reward-icon">🏆</div>
+                        <h3>Recycling Master</h3>
+                        <p>Earn 100 points in the sorting game</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                    <div class="reward-card" data-reward-id="3">
+                        <div class="reward-icon">🏆</div>
+                        <h3>Memory Champion</h3>
+                        <p>Earn 150 points in the memory game</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                    <div class="reward-card" data-reward-id="4">
+                        <div class="reward-icon">🏆</div>
+                        <h3>Matching Expert</h3>
+                        <p>Earn 200 points in the matching game</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                    <div class="reward-card" data-reward-id="5">
+                        <div class="reward-icon">🏆</div>
+                        <h3>Eco Hero</h3>
+                        <p>Earn 500 points across all games</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                    <div class="reward-card" data-reward-id="6">
+                        <div class="reward-icon">🏆</div>
+                        <h3>Difficulty Master</h3>
+                        <p>Complete all games on nightmare difficulty</p>
+                        <div class="reward-status">Locked</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="section" id="info-section" data-testid="info-section">
+            <div class="section-header">
+                <h2 data-key="info.title">Waste Management Information</h2>
+                <p data-key="info.subtitle">Learn about sustainable waste disposal practices</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-icon">🔍</span>
+                    <h3 data-key="info.categories.title">Waste Categories</h3>
+                    <p data-key="info.categories.description">Organic waste should be composted to create nutrient-rich soil. Keep food scraps, yard trimmings, and biodegradable materials separate from other waste streams.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">🔄</span>
+                    <h3 data-key="info.recycling.title">Recycling Guidelines</h3>
+                    <p data-key="info.recycling.description">Clean containers before recycling. Remove caps and lids from bottles. Check local recycling programs for specific material acceptance policies.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">⚠️</span>
+                    <h3 data-key="info.hazardous.title">Hazardous Waste</h3>
+                    <p data-key="info.hazardous.description">Electronics, batteries, chemicals, and medical waste require special disposal methods. Never put these items in regular trash or recycling bins.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">💡</span>
+                    <h3 data-key="info.reduction.title">Reduction Tips</h3>
+                    <p data-key="info.reduction.description">Buy only what you need, choose reusable products, repair instead of replacing, and donate items in good condition to reduce overall waste generation.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">🌱</span>
+                    <h3 data-key="info.composting.title">Composting Guide</h3>
+                    <p data-key="info.composting.description">Create a balanced mix of green materials (food scraps) and brown materials (dry leaves, paper) for optimal composting conditions.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">🏛️</span>
+                    <h3 data-key="info.industrial.title">Industrial Waste</h3>
+                    <p data-key="info.industrial.description">Businesses must follow specific regulations for waste disposal. Partner with certified waste management companies for proper handling and documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="section" id="games-section" data-testid="games-section">
+            <div class="section-header">
+                <h2 data-key="games.title">Eco-Friendly Games</h2>
+                <p data-key="games.subtitle">Learn while you play</p>
+            </div>
+
+            <div class="games-grid">
+                <!-- Sorting Game -->
+                <div class="game-card">
+                    <span class="game-icon">🗑️</span>
+                    <h3>Waste Sorting Challenge</h3>
+                    <p>Test your knowledge by correctly sorting different types of waste into appropriate bins. Earn points for accuracy!</p>
+                    <button class="game-button" id="sorting-game-btn">Play Now</button>
+                </div>
+                
+                <!-- Matching Game -->
+                <div class="game-card">
+                    <span class="game-icon">🧩</span>
+                    <h3>Recycling Matching Game</h3>
+                    <p>Match waste items with their correct disposal method. Improve your waste management knowledge while having fun!</p>
+                    <button class="game-button" id="matching-game-btn">Start Game</button>
+                </div>
+                
+                <!-- Memory Game -->
+                <div class="game-card">
+                    <span class="game-icon">🧠</span>
+                    <h3>Eco Memory Game</h3>
+                    <p>Flip cards to find matching pairs of waste items and their proper disposal methods. Challenge your memory and learn simultaneously!</p>
+                    <button class="game-button" id="memory-game-btn">Play Game</button>
+                </div>
+            </div>
+            
+            <!-- Game Container -->
+            <div id="game-container">
+                <!-- Sorting Game Container -->
+                <div id="sorting-game" class="game-content">
+                    <h3>Waste Sorting Challenge</h3>
+                    <div class="difficulty-selector">
+                        <label>Select Difficulty:</label>
+                        <select id="sorting-difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="hard">Hard</option>
+                            <option value="nightmare">Nightmare</option>
+                            <option value="impossible">Impossible</option>
+                        </select>
+                    </div>
+                    <div class="game-info">
+                        <p>Drag waste items to the correct bins. You have 60 seconds to sort as many items as possible!</p>
+                        <div class="points-display">Points: <span id="sorting-points">0</span></div>
+                    </div>
+                    <div class="bins-container">
+                        <div class="bin" data-bin-type="recyclable">
+                            <h4>♻️ Recyclable</h4>
+                        </div>
+                        <div class="bin" data-bin-type="organic">
+                            <h4>🌱 Organic</h4>
+                        </div>
+                        <div class="bin" data-bin-type="hazardous">
+                            <h4>⚠️ Hazardous</h4>
+                        </div>
+                        <div class="bin" data-bin-type="general">
+                            <h4>🗑️ General Waste</h4>
+                        </div>
+                    </div>
+                    <div class="items-container" id="sorting-items">
+                        <!-- Waste items will be generated here -->
+                    </div>
+                    <button class="reset-button" id="reset-sorting">Reset Game</button>
+                </div>
+                
+                <!-- Matching Game Container -->
+                <div id="matching-game" class="game-content">
+                    <h3>Recycling Matching Game</h3>
+                    <div class="difficulty-selector">
+                        <label>Select Difficulty:</label>
+                        <select id="matching-difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="hard">Hard</option>
+                            <option value="nightmare">Nightmare</option>
+                            <option value="impossible">Impossible</option>
+                        </select>
+                    </div>
+                    <div class="game-info">
+                        <p>Match waste items with their correct disposal method. Find all pairs to win!</p>
+                        <div class="points-display">Points: <span id="matching-points">0</span></div>
+                    </div>
+                    <div class="matching-board" id="matching-board">
+                        <!-- Matching cards will be generated here -->
+                    </div>
+                    <button class="reset-button" id="reset-matching">Reset Game</button>
+                </div>
+                
+                <!-- Memory Game Container -->
+                <div id="memory-game" class="game-content">
+                    <h3>Eco Memory Game</h3>
+                    <div class="difficulty-selector">
+                        <label>Select Difficulty:</label>
+                        <select id="memory-difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="hard">Hard</option>
+                            <option value="nightmare">Nightmare</option>
+                            <option value="impossible">Impossible</option>
+                        </select>
+                    </div>
+                    <div class="game-info">
+                        <p>Flip cards to find matching pairs. Complete the game with the least number of moves!</p>
+                        <div class="points-display">Points: <span id="memory-points">0</span></div>
+                    </div>
+                    <div class="memory-board" id="memory-board">
+                        <!-- Memory cards will be generated here -->
+                    </div>
+                    <button class="reset-button" id="reset-memory">Reset Game</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracker Section -->
+        <section class="section" id="tracker-section" data-testid="tracker-section">
+            <div class="section-header">
+                <h2 data-key="tracker.title">Waste Tracker Dashboard</h2>
+                <p data-key="tracker.subtitle">Monitor your environmental impact</p>
+            </div>
+
+            <div class="metrics-grid" data-testid="tracker-dashboard">
+                <div class="metric-card">
+                    <div class="metric-value" data-testid="metric-waste-reduced">0</div>
+                    <div class="metric-label" data-key="tracker.metrics.wasteReduced">Total Waste Disposal (lbs)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" data-testid="metric-recycling-rate">0</div>
+                    <div class="metric-label" data-key="tracker.metrics.recyclingRate">Recycling Rate %</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" data-testid="metric-carbon-saved">0.0</div>
+                    <div class="metric-label" data-key="tracker.metrics.carbonSaved">Tons CO2 Saved</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" data-testid="metric-eco-points">0</div>
+                    <div class="metric-label" data-key="tracker.metrics.ecoPoints">Eco Points</div>
+                </div>
+            </div>
+
+            <div class="waste-categories">
+                <h3>Live Waste Disposal by Category</h3>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <span class="category-icon">🥬</span>
+                        <span class="category-name">Organic</span>
+                        <span class="category-value" data-category="organic">0 lbs</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">♻️</span>
+                        <span class="category-name">Recyclable</span>
+                        <span class="category-value" data-category="recyclable">0 lbs</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">💻</span>
+                        <span class="category-name">Electronic</span>
+                        <span class="category-value" data-category="electronic">0 lbs</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">⚠️</span>
+                        <span class="category-name">Hazardous</span>
+                        <span class="category-value" data-category="hazardous">0 lbs</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🗑️</span>
+                        <span class="category-name">General</span>
+                        <span class="category-value" data-category="general">0 lbs</span>
+                    </div>
+                </div>
+                <div class="live-indicator">
+                    <span class="pulse-dot"></span>
+                    <span>Live Data - Updates every 30 seconds</span>
+                </div>
+            </div>
+
+            <div class="tracker-cards">
+                <div class="tracker-card">
+                    <span class="tracker-icon">📋</span>
+                    <h3 data-key="tracker.report.title">Yearly Report</h3>
+                    <p data-key="tracker.report.description">This week you've improved your recycling rate by 12% and reduced overall waste by 8 pounds. Keep up the excellent work!</p>
+                    <button class="tracker-button" data-testid="button-view-report" data-key="tracker.report.button">View Full Report</button>
+                </div>
+                <div class="tracker-card">
+                    <span class="tracker-icon">🎯</span>
+                    <h3 data-key="tracker.goals.title">Goals & Achievements</h3>
+                    <p data-key="tracker.goals.description">You're 78% towards your monthly goal of reducing waste by 50 pounds. Complete 3 more recycling activities to unlock the "Green Champion" badge!</p>
+                    <button class="tracker-button" data-testid="button-set-goals" data-key="tracker.goals.button">Set New Goals</button>
+                </div>
+                <div class="tracker-card">
+                    <span class="tracker-icon">📊</span>
+                    <h3 data-key="tracker.comparison.title">Impact Comparison</h3>
+                    <p data-key="tracker.comparison.description">Compared to the average household, you're producing 32% less waste and recycling 28% more materials. You're making a real difference!</p>
+                    <button class="tracker-button" data-testid="button-view-comparison" data-key="tracker.comparison.button">Compare with Others</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about-section" data-testid="about-section">
+            <div class="section-header">
+                <h2 data-key="about.title">About ECOTrack</h2>
+                <p data-key="about.subtitle">Our mission for a sustainable future</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-icon">🎯</span>
+                    <h3 data-key="about.mission.title">Our Mission</h3>
+                    <p data-key="about.mission.description">To create a world where waste is minimized, resources are conserved, and every individual contributes to environmental sustainability through informed actions and smart technology.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-icon">👥</span>
+                    <h3 data-key="about.team.title">Our Team</h3>
+                    <p data-key="about.team.description">A dedicated group of environmental scientists, software engineers, and sustainability experts working together to develop innovative solutions for waste management challenges.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-icon">🌍</span>
+                    <h3 data-key="about.impact.title">Global Impact</h3>
+                    <p data-key="about.impact.description">Since our launch, ECOTrack users have diverted over 2 million pounds of waste from landfills and reduced carbon emissions by 15,000 tons through improved recycling practices.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-icon">🔬</span>
+                    <h3 data-key="about.technology.title">Technology</h3>
+                    <p data-key="about.technology.description">Our platform uses advanced analytics and machine learning to provide personalized waste reduction recommendations and track environmental impact in real-time.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-icon">🤝</span>
+                    <h3 data-key="about.partnerships.title">Partnerships</h3>
+                    <p data-key="about.partnerships.description">We collaborate with local waste management companies, environmental organizations, and municipalities to create comprehensive sustainability programs.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-icon">📚</span>
+                    <h3 data-key="about.education.title">Education</h3>
+                    <p data-key="about.education.description">Through workshops, online resources, and community programs, we educate individuals and businesses about sustainable waste management practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section class="section" id="settings-section" data-testid="settings-section">
+            <div class="section-header">
+                <h2 data-key="settings.title" data-testid="settings-title">Settings</h2>
+                <p data-key="settings.subtitle" data-testid="settings-subtitle">Customize your ECOTrack experience</p>
+            </div>
+
+            <div class="settings-grid">
+                <!-- Theme Selection -->
+                <div class="settings-card" data-testid="theme-settings">
+                    <span class="settings-icon">🎨</span>
+                    <h3 data-key="settings.theme.title">Choose Theme</h3>
+                    <div class="theme-options">
+                        <div class="theme-option light-theme" data-testid="theme-light" data-theme="light">
+                            <span class="theme-name" data-key="settings.theme.light">Light</span>
+                        </div>
+                        <div class="theme-option dark-theme" data-testid="theme-dark" data-theme="dark">
+                            <span class="theme-name" data-key="settings.theme.dark">Dark</span>
+                        </div>
+                        <div class="theme-option forest-theme" data-testid="theme-forest" data-theme="forest">
+                            <span class="theme-name" data-key="settings.theme.forest">Forest</span>
+                        </div>
+                        <div class="theme-option ocean-theme" data-testid="theme-ocean" data-theme="ocean">
+                            <span class="theme-name" data-key="settings.theme.ocean">Ocean</span>
+                        </div>
+                        <div class="theme-option sunset-theme" data-testid="theme-sunset" data-theme="sunset">
+                            <span class="theme-name" data-key="settings.theme.sunset">Sunset</span>
+                        </div>
+                    </div>
+                    <p data-key="settings.theme.description">Choose from our collection of beautiful themes to personalize your ECOTrack experience.</p>
+                </div>
+
+                <!-- Language Selection -->
+                <div class="settings-card" data-testid="language-settings">
+                    <span class="settings-icon">🌐</span>
+                    <h3 data-key="settings.language.title">Language / Idioma</h3>
+                    <div class="language-options">
+                        <button class="language-option" data-testid="language-en" data-language="en">
+                            <span class="flag">🇺🇸</span>
+                            <div class="language-info">
+                                <div class="language-name">English</div>
+                                <div class="language-region">United States</div>
+                            </div>
+                        </button>
+                        <button class="language-option" data-testid="language-es" data-language="es">
+                            <span class="flag">🇪🇸</span>
+                            <div class="language-info">
+                                <div class="language-name">Español</div>
+                                <div class="language-region">España</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="settings-card">
+                    <span class="settings-icon">🔔</span>
+                    <h3 data-key="settings.notifications.title">Notifications</h3>
+                    <p data-key="settings.notifications.description">Manage your notification preferences for reminders, achievements, and weekly reports.</p>
+                    <button class="settings-button" data-testid="button-configure-notifications" data-key="settings.notifications.button">Configure Notifications</button>
+                </div>
+
+                <!-- Privacy -->
+                <div class="settings-card">
+                    <span class="settings-icon">📊</span>
+                    <h3 data-key="settings.settings.privacy.title">Data & Privacy</h3>
+                    <p data-key="settings.privacy.description">Control your data sharing preferences and privacy settings for a personalized experience.</p>
+                    <button class="settings-button" data-testid="button-privacy-settings" data-key="settings.privacy.button">Privacy Settings</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+    <script src="eco-bot.js"></script>
+</body>
+</html>
+
+<audio autoplay loop muted hidden>
+  <source src="assets/audio/music.mp3" type="audio/mpeg">
+</audio>
